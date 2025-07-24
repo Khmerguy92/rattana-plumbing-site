@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rattana Plumbing Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #004a99;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #003366;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1583337130417-3346a1b1d4f5?fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .contact {
+      background-color: #f4f4f4;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      background-color: #004a99;
+      color: white;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rattana Plumbing Services</h1>
+    <p>Reliable Plumbing Solutions for Your Home or Business</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Serving Your Plumbing Needs with Expertise & Care
+  </div>
+
+  <div class="container">
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Leak Repair</h3>
+          <p>Quick and reliable leak detection and repair for all types of plumbing systems.</p>
+        </div>
+        <div class="card">
+          <h3>Drain Cleaning</h3>
+          <p>We clear out clogged drains and ensure your water flows freely.</p>
+        </div>
+        <div class="card">
+          <h3>Water Heater Installation</h3>
+          <p>Professional installation of efficient and reliable water heaters.</p>
+        </div>
+        <div class="card">
+          <h3>Emergency Plumbing</h3>
+          <p>24/7 response for burst pipes, flooding, or any plumbing emergency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@rattanaplumbing.com">info@rattanaplumbing.com</a></p>
+      <p><strong>Hours:</strong> Mon - Sat: 8:00 AM - 6:00 PM</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rattana Plumbing Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
